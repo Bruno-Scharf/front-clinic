@@ -27,13 +27,16 @@ export default function Header() {
 
         <ul className={`${styles.lista} ${menuAberto ? styles.ativo : ''}`}>
           <li>
-            <Link href="/" aria-label="Ir para a página inicial"><h2>Medico</h2></Link>
+            <Link href="/" aria-label="Ir para a página inicial"><h2>home</h2></Link>
           </li>
           <li>
-            <Link href="/sobre" aria-label="Ir para a página Sobre"><h2>Paciente</h2></Link>
+            <Link href="" aria-label="Ir para a página inicial"><h2>Medico</h2></Link>
           </li>
           <li>
-            <Link href="/contato" aria-label="Ir para a página contato"><h2>Consulta</h2></Link>
+            <Link href="" aria-label="Ir para a página Sobre"><h2>Paciente</h2></Link>
+          </li>
+          <li>
+            <Link href="" aria-label="Ir para a página contato"><h2>Consulta</h2></Link>
           </li>
         </ul>
       </nav>
