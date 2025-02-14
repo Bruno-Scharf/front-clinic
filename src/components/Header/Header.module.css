@@ -1,5 +1,4 @@
 
-
 .header {
   padding: 15px 20px;
   background-color: rgba(0, 51, 102);
@@ -7,6 +6,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  flex-grow: 1;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
   width: 100%;      
   z-index: 10;
@@ -26,19 +27,23 @@
   list-style: none;
   display: flex;
   gap: 20px;
-  margin: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
   transition: transform 0.3s ease;
-  justify-content: center; 
-  position: absolute; 
-  top: 20px; 
-  right: 20px; 
-  margin-top: 10px;
+  align-items: center;
+  padding: 10px 0;
+  justify-content: flex-start; 
+  flex-grow: 1;
+  position: relative; 
 }
 
 
 
 .lista li a {
   text-decoration: none;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   color: rgba(152, 251, 152);
   font-weight: bold;
   transition: color 0.3s ease;
@@ -129,14 +134,61 @@
   display: flex;
   align-items: center;
   gap: 10px; 
+  
 }
 
 .logo img {
   border-radius: 50%; 
-  width: 60px;       
-  height: 60px;      
-  object-fit: cover; 
+  width: 100px;       
+  height: 100px;      
+  object-fit: cover;
+  
 }
 
+.Header_li__UAPbS {
+  margin-right: 10px;
+  position: relative;
+  list-style: none;
+  min-width: max-content
+}
+.Header_li__UAPbS:hover .Header_submenu__Nh5Zz {
+  display: block
+}
+.Header_submenu__Nh5Zz {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+  z-index: 1
+}
 
+.Header_submenu__Nh5Zz li {
+  padding: 10px;
+  border-bottom: 1px solid #444
+}
 
+.Header_submenu__Nh5Zz li:last-child {
+  border-bottom: none
+}
+
+.Header_submenu__Nh5Zz li:hover {
+  background-color: #444
+}
+.Header_nav__LVYU2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  flex-grow: 1
+}
+
+.Header_ul__WWrGg {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  position: relative;
+  justify-content: flex-start
+}

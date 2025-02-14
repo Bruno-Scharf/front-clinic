@@ -24,12 +24,13 @@ export default function Header() {
           <span className={menuAberto ? styles.open : ''}></span>
           <span className={menuAberto ? styles.open : ''}></span>
         </div>
-
-        <ul className={`${styles.lista} ${menuAberto ? styles.ativo : ''}`}>
-          <li>
-            <Link href="/" aria-label="Ir para a página inicial"><h2>home</h2></Link>
+        <div class="Header_nav">
+          <ul className={`${styles.lista} ${menuAberto ? styles.ativo : ''}`}>
+          <ul class="header_ul">
+          <li class="header_li">
+            <a href="/medicos">home</a>
           </li>
-          <li>
+          <li class="header_li">
             <Link href="" aria-label="Ir para a página inicial"><h2>Medico</h2></Link>
           </li>
           <li>
@@ -38,7 +39,12 @@ export default function Header() {
           <li>
             <Link href="" aria-label="Ir para a página contato"><h2>Consulta</h2></Link>
           </li>
+
+          </ul>
+          
         </ul>
+        </div>
+        
       </nav>
     </header>
   );
