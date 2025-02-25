@@ -1,0 +1,87 @@
+.medicosConteiner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1d4d4;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.medicosTitulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.formularioContainer {
+    margin-bottom: 40px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputLabel {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.inputField {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.botaoAgendar {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.botaoAgendar:hover {
+    background-color: #45a049;
+}
+
+.tituloConsultas {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.tabelaContainer {
+    overflow-x: auto;
+}
+
+.tabelaConsultas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabelaConsultas th, .tabelaConsultas td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabelaConsultas th {
+    background-color: #f4f4f4;
+}
